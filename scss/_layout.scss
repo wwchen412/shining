@@ -5,9 +5,21 @@ body {
     color: $maincolor;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 a {
     color: $maincolor;
     text-decoration: none;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h6 {
+    font-size: .9rem;
 }
 
 .container {
@@ -21,98 +33,4 @@ a {
     padding: 0;
     box-sizing: border-box;
     margin: 0 auto;
-}
-
-header {
-    nav {
-        padding: 55px 20px 0px;
-        text-align: center;
-        ul {
-            border-bottom: 1px solid $maincolor;
-        }
-        li {
-            display: inline-block;
-            padding: 0 20px 25px;
-            ;
-        }
-    }
-    #logo {
-        img {
-            max-width: 255px;
-            display: block;
-            margin: 10px auto;
-        }
-    }
-}
-
-#main-img {
-    ul {
-        overflow: auto;
-        width: 100%;
-        li {
-            font-size: 0;
-            @include range-width(1024px) {
-                float: left;
-                width: calc(100% / 8);
-                height: 0;
-                padding-bottom: calc(100% / 8);
-                display: inline-block;
-                overflow: hidden;
-                img {
-                    width: 100%;
-                }
-                &:nth-child(10) {
-                    width: calc(100% / 8 * 2);
-                    padding-bottom: calc(100% / 8 *2);
-                }
-                &:nth-child(21) {
-                    margin-top: -12.5%;
-                }
-            }
-            @include range-width(768px, 1024px) {
-                float: left;
-                width: calc(100% / 6);
-                height: 0;
-                padding-bottom: calc(100% / 6);
-                overflow: hidden;
-                img {
-                    width: 100%;
-                }
-                &:nth-child(9) {
-                    margin-left: calc(100% / 6 * 2);
-                }
-                &:nth-child(10) {
-                    width: calc(100% / 6 * 2);
-                    padding-bottom: calc(100% / 6 * 2);
-                    margin-left: calc(100% / 6 * -3);
-                }
-                &:nth-child(14),
-                &:nth-child(16) {
-                    margin-top: calc(100% / 6 * -1);
-                }
-                &:nth-child(29),
-                &:nth-child(28) {
-                    display: none;
-                }
-            }
-            @include range-width(320px, 768px) {
-                float: left;
-                width: calc(100% / 4);
-                height: 0;
-                padding-bottom: calc(100% / 4);
-                display: inline-block;
-                overflow: hidden;
-                img {
-                    width: 100%;
-                }
-                &:nth-child(10) {
-                    width: calc(100% / 4 * 2);
-                    padding-bottom: calc(100% / 4 * 2);
-                }
-                &:nth-child(13) {
-                    margin-top: -25%;
-                }
-            }
-        }
-    }
 }

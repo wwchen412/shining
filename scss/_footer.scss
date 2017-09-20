@@ -1,0 +1,40 @@
+@import '_color.scss';
+footer {
+    text-align: center;
+    #footer {
+        border-top: 1px solid $maincolor;
+        padding: 40px 0;
+        .info-group {
+            display: flex;
+            flex: wrap;
+            max-width: 505px;
+            margin: 0 auto;
+            &>div {
+                padding: 10px;
+            }
+            .logo {
+                display: inline-block;
+                flex: 1;
+                img {
+                    display: block;
+                }
+            }
+            .info {
+                display: inline-block;
+                text-align: left;
+                flex: 1;
+                h6 {
+                    height: 33%;
+                    &:nth-child(2) {
+                        margin: 3% 0;
+                    }
+                }
+            }
+        }
+    }
+    #copyright {
+        background: $maincolor;
+        color: $gray;
+        padding: 10px 0;
+    }
+}

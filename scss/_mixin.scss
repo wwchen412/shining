@@ -38,14 +38,6 @@
     }
 }
 
-@mixin flex-colum($row, $gap) {
-    flex-direction: row;
-    -ms-flex-direction: row;
-    -ms-flex-wrap: wrap;
-    @include column-count($row);
-    @include column-gap($gap);
-}
-
 @mixin triangle($t_width) {
     content: '';
     width: 0;
@@ -76,4 +68,9 @@
     @include border-radius(50%);
     color: #fff;
     cursor: pointer;
+}
+
+%italic {
+    font-style: italic;
+    color: $gray;
 }
