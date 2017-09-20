@@ -34,3 +34,15 @@ h6 {
     box-sizing: border-box;
     margin: 0 auto;
 }
+
+.hidden-xs {
+    @include range-width(300px, 768px) {
+        display: none !important;
+    }
+}
+
+.hidden-md {
+    @include range-width(768px) {
+        display: none !important;
+    }
+}
