@@ -6,15 +6,25 @@ header {
         padding: 35px 0 0px;
         text-align: center;
         border-bottom: 1px solid $maincolor;
-        position: relative;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
         @include range-width(320px, 768px) {
             background: $maincolor;
-            padding: 10px 0;
             text-align: left;
+            padding: 10px 20px;
         }
         li {
             display: inline-block;
             padding: 20px 20px 25px;
+            &.menu {
+                float: right;
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
         }
         .phone-nav {
             display: flex;
@@ -56,6 +66,7 @@ header {
                 text-align: center;
                 padding: 40px 20px;
                 transition: .2s;
+                box-shadow: -2px 0 30px rgba($maincolor, .5);
                 li {
                     display: block;
                     border-bottom: 1px solid $lightgray;
@@ -65,6 +76,13 @@ header {
                         right: 10px;
                         z-index: 100;
                         border-bottom: 0;
+                        img {
+                            width: 15px;
+                            height: 15px;
+                        }
+                        &:hover {
+                            opacity: .8;
+                        }
                     }
                     &.social {
                         border-bottom: 0;
@@ -75,6 +93,9 @@ header {
                             &:nth-child(2) {
                                 margin: 0 10px;
                             }
+                            &:hover {
+                                opacity: .8;
+                            }
                         }
                     }
                 }
@@ -82,7 +103,11 @@ header {
         }
     }
     #logo {
+        margin-top: 100px;
         padding: 20px 0 0;
+        @include range-width(300px, 768px) {
+            margin-top: 52px;
+        }
         img {
             max-width: 255px;
             display: block;

@@ -16,68 +16,65 @@
 <body>
     <header>
         <nav>
-            <div class="container">
-                <ul class="hidden-xs pc-nav">
-                    <li>
-                        <a href="#">
+
+            <ul class="hidden-xs pc-nav">
+                <li>
+                    <a href="#">
                                         驚豔天目
                                 </a>
-                    </li>
-                    <li>
-                        <a href="#">
+                </li>
+                <li>
+                    <a href="#">
                                         陶藝茶器
                                 </a>
-                    </li>
-                    <li>
-                        <a href="#">
+                </li>
+                <li>
+                    <a href="#">
                                         品茶空間
                                 </a>
+                </li>
+                <li><a href="#">台灣茶品</a></li>
+                <li><a href="">台灣老茶</a></li>
+                <li class="menu">
+                    <img src="../img/pc_menu.svg" alt="">
+                </li>
+            </ul>
+            <div class="phone-nav hidden-md">
+                <div class="mini-logo">
+                    <img src="../img/minilogo.svg" alt="">
+                </div>
+                <div class="menu">
+                    <img src="../img/menu.svg" alt="">
+                </div>
+
+
+            </div>
+            <div class="menu-list">
+                <ul>
+                    <li class="close">
+                        <div>
+                            <img src="../img/close.svg" alt="">
+                        </div>
                     </li>
                     <li>
-                        <a href="#">
-                                        台灣茶品
-                                </a>
+                        <a href="http://">最新消息</a>
                     </li>
-                    <li><a href="">
-                                    台灣老茶    
-                            </a></li>
+                    <li>
+                        <a href="http://">關於豐曜</a>
+                    </li>
+                    <li>
+                        <a href="http://">門市資訊</a>
+                    </li>
+                    <li class="social">
+                        <div><img src="../img/3socail.svg" alt=""></div>
+                        <div><img src="../img/4socail.svg" alt=""></div>
+                        <div><img src="../img/5socail.svg" alt=""></div>
+                    </li>
+
                 </ul>
-                <div class="phone-nav hidden-md">
-                    <div class="mini-logo">
-                        <img src="../img/minilogo.svg" alt="">
-                    </div>
-                    <div class="menu">
-                        <img src="../img/menu.svg" alt="">
-
-                    </div>
-
-
-                </div>
-                <div class="menu-list">
-                    <ul>
-                        <li class="close">
-                            <div>
-                                X
-                            </div>
-                        </li>
-                        <li>
-                            <a href="http://">最新消息</a>
-                        </li>
-                        <li>
-                            <a href="http://">關於豐曜</a>
-                        </li>
-                        <li>
-                            <a href="http://">門市資訊</a>
-                        </li>
-                        <li class="social">
-                            <div><img src="../img/3socail.svg" alt=""></div>
-                            <div><img src="../img/4socail.svg" alt=""></div>
-                            <div><img src="../img/5socail.svg" alt=""></div>
-                        </li>
-
-                    </ul>
-                </div>
             </div>
+
+
 
         </nav>
         <div id="logo">
@@ -242,7 +239,6 @@
             $('.menu-list ul').click(function() {
                 //阻止泡泡往外找
                 event.stopPropagation();
-
             })
         })
     </script>
