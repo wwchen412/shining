@@ -3,6 +3,7 @@
 html,
 body {
     color: $maincolor;
+    font-family: "Helvetica Neue", Helvetica, "PingFang TC", Arial, "Microsoft JhengHei", sans-serif;
 }
 
 * {
@@ -16,6 +17,14 @@ a {
 
 h2 {
     font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+h4 {
+    font-size: 1rem;
 }
 
 h6 {
@@ -44,5 +53,31 @@ h6 {
 .hidden-md {
     @include range-width(768px) {
         display: none !important;
+    }
+}
+
+.bread-crumb {
+    background-color: #000;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    ul {
+        li {
+            display: inline-block;
+            a {
+                color: #fff;
+            }
+            &:after {
+                content: '>';
+                color: #fff;
+                margin: 0 5px;
+                display: inline-block;
+                vertical-align: baseline;
+            }
+            &:last-child {
+                &:after {
+                    content: '';
+                }
+            }
+        }
     }
 }

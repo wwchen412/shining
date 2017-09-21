@@ -104,21 +104,70 @@ header {
             }
         }
     }
-    #logo {
-        margin-top: 100px;
-        padding: 20px 0 0;
-        @include range-width(300px, 768px) {
-            margin-top: 52px;
-        }
-        img {
-            max-width: 255px;
-            display: block;
-            margin: 0 auto;
+    &#inner-page {
+        nav {
+            padding: 0;
+            background-color: $maincolor;
+            border-bottom: 0;
+            @include range-width(300px, 768px) {
+                height: auto;
+                padding: 10px 20px;
+            }
+            a {
+                color: #fff;
+                @include range-width(300px, 768px) {
+                    color: $maincolor;
+                }
+            }
+            .menu-list {
+                a {
+                    color: $maincolor;
+                }
+            }
+            .pc-nav {
+                overflow: auto;
+                padding: 20px 0;
+                li {
+                    padding: 0px 20px;
+                    &.mini-logo {
+                        vertical-align: middle;
+                        img {
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+                    &.menu {
+                        padding-top: 5px;
+                    }
+                }
+            }
         }
     }
 }
 
 // index imglist
+#wrap {
+    margin-top: 100px;
+    @include range-width(300px, 768px) {
+        margin-top: 52px;
+    }
+    &.inner-page {
+        margin-top: 72px;
+        @include range-width(300px, 768px) {
+            margin-top: 52px;
+        }
+    }
+}
+
+#logo {
+    padding: 20px 0 0;
+    img {
+        max-width: 255px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
 #main-img {
     ul {
         overflow: auto;

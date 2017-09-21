@@ -77,14 +77,15 @@
 
 
         </nav>
+
+    </header>
+    <div id="wrap">
         <div id="logo">
             <div class="container">
                 <img src="../img/logo.svg" alt="">
             </div>
 
         </div>
-    </header>
-    <div id="wrap">
         <div id="main-img">
             <div class="container-fluid">
                 <ul>
@@ -224,24 +225,7 @@
 
     </footer>
 
-    <script>
-        $(function() {
-            $('.menu').click(function() {
-                $('.menu-list').addClass('active').find('ul').addClass('active');
-
-            })
-            $('.menu-list').click(function() {
-                $('.menu-list').removeClass('active');
-            })
-            $('.menu-list ul li.close').click(function() {
-                $('.menu-list').removeClass('active');
-            })
-            $('.menu-list ul').click(function() {
-                //阻止泡泡往外找
-                event.stopPropagation();
-            })
-        })
-    </script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
