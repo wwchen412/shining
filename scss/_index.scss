@@ -10,6 +10,8 @@ header {
         top: 0;
         left: 0;
         width: 100%;
+        background-color: rgba(255, 255, 255, 1);
+        z-index: 1;
         @include range-width(320px, 768px) {
             background: $maincolor;
             text-align: left;
