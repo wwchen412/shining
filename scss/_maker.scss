@@ -1,0 +1,38 @@
+@import '_color.scss';
+@import '_mixin.scss';
+.tea-maker-info {
+    padding: 40px 0;
+}
+
+.maker-nav {
+    ul {
+        li {
+            @include range-width(769px, 0) {
+                width: calc(100% / 4);
+                text-align: center;
+            }
+        }
+    }
+}
+
+.maker-info {
+    border-top: 1px solid $lightgray;
+    padding: 20px 0;
+    font-size: 0;
+    >div {
+        display: inline-block;
+        vertical-align: top;
+    }
+    .make-info-pic {
+        width: 25%;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .make-info-content {
+        width: 75%;
+        padding-left: 15px;
+    }
+}
