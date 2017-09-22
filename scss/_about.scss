@@ -134,4 +134,11 @@
             margin: 100px 0 40px;
         }
     }
+    &.artist-page {
+        margin: 0 0 120px;
+        .square-col {
+            margin-bottom: 0;
+        }
+        background: $lightgray;
+    }
 }

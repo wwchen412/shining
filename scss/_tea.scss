@@ -1,0 +1,66 @@
+@import '_color.scss';
+@import '_mixin.scss';
+#tea-nav {
+    background: $maincolor;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        position: relative;
+    }
+    li {
+        display: inline-block;
+        &.active,
+        &:hover {
+            a {
+                color: $yellow;
+            }
+        }
+        a {
+            display: inline-block;
+            padding: 15px 0;
+            color: #fff;
+        }
+        &.arrow {
+            position: absolute;
+            right: 0;
+            top: 7.5px;
+            display: none;
+            transition: .2s cubic-bezier(0.165, 0.84, 0.44, 1);
+            img {
+                width: 30px;
+                height: 30px;
+            }
+            @include range-width(300px, 768px) {
+                display: block;
+                width: auto;
+            }
+            &.animation {
+                transform: rotateX(180deg);
+            }
+        }
+    }
+    @include range-width(300px, 768px) {
+        li {
+            width: 100%;
+            text-align: center;
+            display: none;
+            &.active {
+                display: block;
+                order: -1;
+            }
+            a {
+                width: 80%;
+            }
+            &.slide {
+                display: block;
+            }
+        }
+    }
+}
+
+.taiwan-tea {
+    .text-area {
+        padding: 30px 0 50px;
+    }
+}
