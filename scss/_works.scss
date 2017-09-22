@@ -1,0 +1,139 @@
+        @import '_color.scss';
+        @import '_mixin.scss';
+        .works {
+            margin: 6vw 0;
+            .works-items {
+                ul {
+                    font-size: 0;
+                    text-align: center;
+                    li {
+                        display: inline-block;
+                        width: calc(92vw /4 - (15px * 3 / 4));
+                        margin-right: 15px;
+                        margin-bottom: 15px;
+                        overflow: hidden;
+                        text-align: left;
+                        vertical-align: top;
+                        &:nth-child(4n) {
+                            margin-right: 0;
+                        }
+                        img {
+                            width: 100%;
+                            height: calc(92vw / 4 - (15px * 3 / 4));
+                            object-fit: cover;
+                        }
+                        @include range-width(320px, 768px) {
+                            width: calc(92vw /2 - (15px * 1 /2));
+                            img {
+                                height: calc(92vw / 2 - (15px * 1 / 2));
+                            }
+                            &:nth-child(even) {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .works-single {
+            .works-info {
+                background: $lightgray;
+            }
+            .text-area {
+                padding: 40px 0;
+            }
+        }
+        
+        .works-classic {
+            padding: 40px 0;
+            h2 {
+                text-align: center;
+                padding-bottom: 20px;
+                border-bottom: 1px solid $lightgray;
+            }
+            img {
+                width: 100%;
+                height: auto;
+            }
+            .shing-100-img,
+            .shing-100-p,
+            .shing-img50-p50,
+            .shing-img60-p40,
+            .shing-img40-p60 {
+                padding: 15px 0;
+            }
+            .shing-img50-p50 {
+                font-size: 0;
+                >div {
+                    display: inline-block;
+                    width: calc(100% / 2 - 15px / 2);
+                    vertical-align: top;
+                    @include range-width(300px, 768px) {
+                        width: 100%;
+                    }
+                    &:nth-child(2) {
+                        margin-left: 15px;
+                        @include range-width(300px, 768px) {
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+            .shing-img60-p40 {
+                font-size: 0;
+                >div {
+                    display: inline-block;
+                    vertical-align: top;
+                    &:nth-child(2) {
+                        margin-left: 15px;
+                        @include range-width(300px, 768px) {
+                            margin-left: 0;
+                        }
+                    }
+                }
+                .img60 {
+                    width: calc(60% - 15px / 2);
+                    @include range-width(300px, 768px) {
+                        width: 100%;
+                    }
+                }
+                .p40 {
+                    width: calc(40% - 15px / 2);
+                    @include range-width(300px, 768px) {
+                        width: 100%;
+                    }
+                }
+            }
+            .shing-img40-p60 {
+                font-size: 0;
+                display: flex;
+                flex-wrap: wrap;
+                >div {
+                    display: inline-block;
+                    vertical-align: top;
+                    &:first-child {
+                        margin-left: 15px;
+                        @include range-width(300px, 768px) {
+                            margin-left: 0;
+                        }
+                    }
+                }
+                .img40 {
+                    order: 2;
+                    width: calc(40% - 15px / 2);
+                    @include range-width(300px, 768px) {
+                        order: 1;
+                        width: 100%;
+                    }
+                }
+                .p60 {
+                    order: 1;
+                    width: calc(60% - 15px / 2);
+                    @include range-width(300px, 768px) {
+                        order: 2;
+                        width: 100%;
+                    }
+                }
+            }
+        }
