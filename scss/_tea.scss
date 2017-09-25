@@ -5,11 +5,12 @@
     ul {
         display: flex;
         flex-wrap: wrap;
-        // justify-content: space-around;
+        justify-content: space-around;
         position: relative;
     }
     li {
         display: inline-block;
+        text-align: center;
         &.active,
         &:hover {
             a {
@@ -57,17 +58,11 @@
             }
         }
     }
-    li {
-        @include range-width(769px, 0) {
-            width: calc(100% / 4);
-            text-align: center;
-        }
-    }
 }
 
 .taiwan-tea {
     .text-area {
-        padding: 30px 0 50px;
+        padding: 30px 15px 50px;
     }
 }
 

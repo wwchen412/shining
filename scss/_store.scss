@@ -24,7 +24,7 @@
                 width: calc(100%);
             }
             .store-img {
-                max-height: 150px;
+                max-height: 230px;
                 overflow: hidden;
                 position: relative;
                 @include range-width(320px, 768px) {
@@ -35,22 +35,22 @@
                     height: auto;
                     transition: .5s;
                 }
-                &:hover {
-                    img {
-                        transform: scale(1.2);
-                    }
-                    &:before {
-                        content: '';
-                        display: block;
-                        width: 100%;
-                        height: 100%;
-                        background: rgba($maincolor, .4);
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        z-index: 1;
-                    }
-                }
+                // &:hover {
+                //     img {
+                //         transform: scale(1.2);
+                //     }
+                //     &:before {
+                //         content: '';
+                //         display: block;
+                //         width: 100%;
+                //         height: 100%;
+                //         background: rgba($maincolor, .4);
+                //         position: absolute;
+                //         top: 0;
+                //         left: 0;
+                //         z-index: 1;
+                //     }
+                // }
             }
             .store-content {
                 padding: 15px;

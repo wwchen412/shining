@@ -4,16 +4,17 @@
     padding: 40px 0;
 }
 
-// .maker-nav {
-//     ul {
-//         li {
-//             @include range-width(769px, 0) {
-//                 width: calc(100% / 4);
-//                 text-align: center;
-//             }
-//         }
-//     }
-// }
+#tea-nav.maker-nav {
+    ul {
+        justify-content: flex-start;
+        li {
+            @include range-width(769px, 0) {
+                width: calc(100% / 4);
+            }
+        }
+    }
+}
+
 .maker-info {
     border-top: 1px solid $lightgray;
     padding: 20px 0;
