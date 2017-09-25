@@ -67,11 +67,12 @@
 
 .tea-single-page {
     font-size: 0;
+    margin-bottom: 40px;
     >div {
         display: inline-block;
         vertical-align: top;
         &.tea-slider {
-            width: 40vw;
+            width: 40%;
             .big-img {
                 height: 40vw;
                 img {
@@ -85,7 +86,7 @@
                     font-size: 0;
                     li {
                         display: inline-block;
-                        width: calc(40vw / 4);
+                        width: calc((100vw - (100vw - 100%))/ 4);
                         height: calc(40vw / 4);
                         overflow: hidden;
                         img {
@@ -98,7 +99,7 @@
             }
         }
         &.tea-info {
-            width: 60vw;
+            width: 60%;
             .title {
                 padding: 40px 20px;
                 background: $maincolor;
@@ -136,7 +137,7 @@
                     ul {
                         li {
                             display: inline-block;
-                            width: calc(100vw / 4);
+                            width: calc((100vw - (100vw - 100%))/ 4);
                             height: calc(100vw / 4);
                             overflow: hidden;
                         }
