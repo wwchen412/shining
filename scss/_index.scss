@@ -172,8 +172,8 @@ header {
 
 #main-img {
     ul {
-        overflow: auto;
-        width: 100vw;
+        overflow: hidden;
+        width: 100%;
         padding: 20px 0;
         li {
             font-size: 0;
@@ -207,7 +207,7 @@ header {
             // phone
             @include range-width(320px, 768px) {
                 float: left;
-                width: calc(100vw / 4);
+                width: calc((100vw - (100vw - 100%))/ 4);
                 height: calc(100vw / 4);
                 // padding-bottom: calc(100vw / 4);
                 display: inline-block;
@@ -218,7 +218,7 @@ header {
                     object-fit: cover;
                 }
                 &:nth-child(10) {
-                    width: calc(100vw / 4 * 2);
+                    width: calc((100vw - (100vw - 100%))/ 4 * 2);
                     height: calc(100vw / 4 * 2);
                 }
                 &:nth-child(13) {
