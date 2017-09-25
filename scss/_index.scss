@@ -173,7 +173,7 @@ header {
 #main-img {
     ul {
         overflow: auto;
-        width: 100%;
+        width: 100vw;
         padding: 20px 0;
         li {
             font-size: 0;
@@ -185,7 +185,7 @@ header {
             // ipad pc
             @include range-width(768px, 0) {
                 float: left;
-                width: calc(100vw / 8);
+                width: calc((100vw - (100vw - 100%))/ 8);
                 height: calc(100vw / 8);
                 // padding-bottom: calc(100% / 8);
                 display: inline-block;
@@ -196,7 +196,7 @@ header {
                     object-fit: cover;
                 }
                 &:nth-child(10) {
-                    width: calc(100vw / 8 * 2);
+                    width: calc((100vw - (100vw - 100%))/ 8 * 2);
                     height: calc(100vw / 8 * 2);
                     ;
                 }
