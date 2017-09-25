@@ -5,7 +5,7 @@
     ul {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        // justify-content: space-around;
         position: relative;
     }
     li {
@@ -55,6 +55,12 @@
             &.slide {
                 display: block;
             }
+        }
+    }
+    li {
+        @include range-width(769px, 0) {
+            width: calc(100% / 4);
+            text-align: center;
         }
     }
 }
