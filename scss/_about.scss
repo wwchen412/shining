@@ -142,4 +142,24 @@
         }
         background: $lightgray;
     }
+    &.no-maker {
+        .square-col:first-child {
+            width: calc((100vw - (100vw - 100%))/ 6);
+            @include range-width(768px, 1024px) {
+                width: calc((100vw - (100vw - 100%))/ 3);
+                .square {
+                    height: calc(100vw / 3);
+                    padding: 0;
+                }
+            }
+            @include range-width(320px, 768px) {
+                width: calc((100vw - (100vw - 100%))/ 2);
+                margin-bottom: 0;
+                .square {
+                    height: calc(100vw / 2);
+                    padding: 0;
+                }
+            }
+        }
+    }
 }
