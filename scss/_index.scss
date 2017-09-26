@@ -7,7 +7,6 @@ body.active {
 
 header {
     nav {
-        font-family: '';
         padding: 35px 0 0px;
         text-align: center;
         border-bottom: 1px solid $lightgray;
@@ -25,6 +24,8 @@ header {
         li {
             display: inline-block;
             padding: 20px 20px 25px;
+            font-family: "source-han-serif-tc";
+            font-weight: 900;
             &.menu {
                 float: right;
                 img {
