@@ -272,8 +272,14 @@ header {
             }
             span {
                 margin-right: 20px;
+                &.title {
+                    font-family: "source-han-serif-tc";
+                    font-weight: 900;
+                }
                 &.date {
                     letter-spacing: 2px;
+                    font-family: "source-han-serif-tc";
+                    font-weight: 500;
                     @extend %italic;
                 }
                 &:last-child {
