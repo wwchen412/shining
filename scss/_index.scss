@@ -249,8 +249,10 @@ header {
         span {
             @extend %italic;
         }
+        font-family: "source-han-serif-tc";
         padding: 20px 0;
         border-bottom: 2px solid $lightgray;
+        font-size: 0.9rem;
     }
     .list {
         padding: 40px 0;
