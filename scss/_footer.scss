@@ -9,20 +9,34 @@ footer {
             flex: wrap;
             max-width: 505px;
             margin: 0 auto;
+            @include range-width(300px, 576px) {
+                display: block;
+            }
             &>div {
                 padding: 10px;
             }
             .logo {
                 display: inline-block;
                 flex: 1;
+                @include range-width(300px, 576px) {
+                    display: block;
+                    width: 100%;
+                    flex: none;
+                }
                 img {
                     display: block;
+                    max-width: 255px;
+                    margin: 0 auto;
                 }
             }
             .info {
                 display: inline-block;
                 text-align: left;
                 flex: 1;
+                @include range-width(300px, 576px) {
+                    display: block;
+                    text-align: center;
+                }
                 h6 {
                     height: 33%;
                     line-height: 150%;
