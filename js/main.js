@@ -7,6 +7,11 @@ $(function() {
         $(this).toggleClass('animation');
         $('#tea-nav li').toggleClass('slide');
     })
+    $('#tea-nav li.active').click(function() {
+        event.preventDefault();
+        $('.arrow').toggleClass('animation');
+        $('#tea-nav li').toggleClass('slide');
+    })
 });
 // sandwich bar
 $(window).load(function() {
