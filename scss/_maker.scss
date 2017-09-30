@@ -32,7 +32,7 @@
         }
     }
     .make-info-content {
-        width: 74%;
+        width: calc(75% - 4px);
         padding-left: 15px;
     }
 }

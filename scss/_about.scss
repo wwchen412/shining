@@ -4,8 +4,8 @@
     display: flex;
     flex-wrap: wrap;
     .about-img {
-        width: 30%;
-        padding-bottom: 30%;
+        width: calc((100vw - (100vw - 100%))/ 6 * 2);
+        padding-bottom: calc((100vw - (100vw - 100%))/ 6 * 2);
         height: 0;
         img {
             width: 100%;
@@ -16,7 +16,7 @@
         }
     }
     .about-content {
-        width: 70%;
+        width: calc((100vw - (100vw - 100%))/ 6 * 4);
         padding: 60px 5% 0;
         .title {
             padding: 10px 0;
